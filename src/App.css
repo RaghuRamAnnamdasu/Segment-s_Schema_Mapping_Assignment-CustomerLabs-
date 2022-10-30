@@ -1,38 +1,171 @@
-.App {
-  text-align: center;
+.App{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.saveSegmentButtonEnclosure{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.modalEnclosure{
+  position: absolute; 
+  right:0 !important;
+  bottom: 0 !important;
+  top: auto !important;
+  left: auto !important;
+  border: 1px solid black;
+  width: 33%;
+  height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
+  background-color: #39AEBC;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 80px;
+  font-size: 18px;
+  padding-left: 16px;
+}
+
+.body{
+  background-color: white;
+  height: calc(100vh - 160px);
   display: flex;
   flex-direction: column;
+  gap: 24px;
+  padding: 8px 16px 8px 16px;
+}
+
+.segmentNameWrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.segmentNameWrapper label{
+  padding: 8px 0;
+}
+
+.segmentNameWrapper input{
+  padding: 16px 8px;
+}
+
+.informationWrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.indicationWrapper{
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.userTraitsWrapper,
+.groupTraitsWrapper{
+  font-size: 14px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: flex;
+  gap: 8px;
 }
 
-.App-link {
-  color: #61dafb;
+.userTraitsWrapper svg{
+  color: greenyellow;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.groupTraitsWrapper svg{
+  color: firebrick;
+}
+
+.addSchemaDropDown{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.blueBox{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-height: 200px;
+  overflow: auto;
+}
+
+.addedSchemaWrapper{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.addSchemaDropDown span,
+.addedSchemaWrapper span{
+  display: flex;
+  align-items: center;
+}
+
+.addSchemaSelectTagEnclosure select,
+.addedSchemaEnclosureSelectTag select{
+  padding: 16px 8px;
+  width: -webkit-fill-available;
+}
+
+.addSchemaSelectTagEnclosure,
+.addedSchemaEnclosureSelectTag{    
+  width: -webkit-fill-available;
+}
+
+.addNewSchemaLink{
+  color: #41B494;
+  text-decoration: none;
+  padding: 0 24px;
+}
+
+.addNewSchemaLink span{
+  border-bottom: 2px solid #41B494;
+}
+
+.footer{
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 16px;
+  background-color: lightgray;
+  height: 80px;
+}
+
+.saveButton{
+  background-color: #41B494 !important;
+}
+
+.cancelButton{
+  background-color: white !important;
+  color: firebrick !important;
+}
+
+.first_name,
+.last_name,
+.gender,
+.age{
+  color: greenyellow !important;
+}
+
+.account_name,
+.city,
+.state{
+  color: firebrick !important;
+}
+
+.schemaRemoveIcon{
+  background-color: aliceblue;
+  height: 50.8px !important;
+  width: 24px !important;
+  cursor: pointer;
 }
