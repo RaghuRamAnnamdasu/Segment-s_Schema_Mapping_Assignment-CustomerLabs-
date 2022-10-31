@@ -18,7 +18,7 @@
   top: auto !important;
   left: auto !important;
   border: 1px solid black;
-  width: 33%;
+  width: 30%;
   height: 100%;
 }
 
@@ -33,12 +33,16 @@
   padding-left: 16px;
 }
 
+.header svg {
+  cursor: pointer;
+}
+
 .body{
   background-color: white;
-  height: calc(100vh - 160px);
+  height: calc(100vh - 176px);
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
   padding: 8px 16px 8px 16px;
 }
 
@@ -53,7 +57,7 @@
 }
 
 .segmentNameWrapper input{
-  padding: 16px 8px;
+  padding: 12px 8px;
 }
 
 .informationWrapper{
@@ -78,10 +82,14 @@
 
 .userTraitsWrapper svg{
   color: greenyellow;
+  width: 16px !important;
+  height: 16px !important;
 }
 
 .groupTraitsWrapper svg{
   color: firebrick;
+  width: 16px !important;
+  height: 16px !important;
 }
 
 .addSchemaDropDown{
@@ -93,7 +101,7 @@
 .blueBox{
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
   max-height: 200px;
   overflow: auto;
 }
@@ -112,7 +120,7 @@
 
 .addSchemaSelectTagEnclosure select,
 .addedSchemaEnclosureSelectTag select{
-  padding: 16px 8px;
+  padding: 12px 8px;
   width: -webkit-fill-available;
 }
 
@@ -155,17 +163,26 @@
 .gender,
 .age{
   color: greenyellow !important;
+  width: 16px !important;
+  height: 16px !important;
 }
 
 .account_name,
 .city,
 .state{
   color: firebrick !important;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.addSchemaDropDown svg {
+  width: 16px !important;
+  height: 16px !important;
 }
 
 .schemaRemoveIcon{
   background-color: aliceblue;
-  height: 50.8px !important;
+  height: 42.8px !important;
   width: 24px !important;
   cursor: pointer;
 }
